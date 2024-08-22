@@ -1,11 +1,12 @@
-import { Link } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function Page() {
+export default function Boletim() {
   return (
     <View style={styles.container}>
-      <Text>Página de Login</Text>
-      <Link href={'./pages/Home'}>ACESSAR</Link>
+      <Text>Página do Boletim</Text>
+      <StatusBar style='auto' />
     </View>
   );
 }
@@ -13,9 +14,8 @@ export default function Page() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 24,
-    gap: 100,
   },
 });
