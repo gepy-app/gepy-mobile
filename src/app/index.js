@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <View style={styles.container}>
       <Text>Página de Login</Text>
-      <Link href={'./pages/Home'}>ACESSAR</Link>
+      <Link href={'./pages/home'}>ACESSAR</Link>
     </View>
   );
 }

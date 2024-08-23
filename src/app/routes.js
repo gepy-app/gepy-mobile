@@ -1,39 +1,154 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import News from './pages/News';
-import Boletim from './pages/Boletim';
-import Agenda from './pages/Agenda';
-import Recados from './pages/Recados';
-import Tarefas from './pages/Tarefas';
+import { Ionicons } from '@expo/vector-icons';
+import Icon from 'react-native-vector-icons/Ionicons';
+import News from './pages/news';
+import Agenda from './pages/agenda';
+import Boletim from './pages/boletim';
+import Recados from './pages/recados';
+import Tarefas from './pages/tarefas';
 
 const Tab = createBottomTabNavigator();
 
 export default function Routes() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarActiveTintColor: '#6700B3',
+        tabBarInactiveTintColor: '#8300E4',
+        tabBarStyle: {
+          borderTopWidth: 0,
+          borderTopLeftRadius: 20,
+          borderTopRightRadius: 20,
+          paddingBottom: 5,
+          paddingTop: 5,
+          marginTop: -20,
+        },
+      }}
+    >
       <Tab.Screen
-        name='news'
+        name="news"
         component={News}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => {
+            if (focused) {
+              return (
+                <Ionicons
+                  name="newspaper"
+                  size={size}
+                  color={color}
+                />
+              );
+            }
+            return (
+              <Ionicons
+                name="newspaper-outline"
+                size={size}
+                color={color}
+              />
+            );
+          },
+        }}
       />
       <Tab.Screen
-        name='agenda'
+        name="agenda"
         component={Agenda}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => {
+            if (focused) {
+              return (
+                <Ionicons
+                  name="calendar"
+                  size={size}
+                  color={color}
+                />
+              );
+            }
+            return (
+              <Ionicons
+                name="calendar-outline"
+                size={size}
+                color={color}
+              />
+            );
+          },
+        }}
       />
       <Tab.Screen
-        name='boletim'
+        name="boletim"
         component={Boletim}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => {
+            if (focused) {
+              return (
+                <Ionicons
+                  name="reader"
+                  size={size}
+                  color={color}
+                />
+              );
+            }
+            return (
+              <Ionicons
+                name="reader-outline"
+                size={size}
+                color={color}
+              />
+            );
+          },
+        }}
       />
       <Tab.Screen
-        name='recados'
+        name="recados"
         component={Recados}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => {
+            if (focused) {
+              return (
+                <Ionicons
+                  name="notifications"
+                  size={size}
+                  color={color}
+                />
+              );
+            }
+            return (
+              <Ionicons
+                name="notifications-outline"
+                size={size}
+                color={color}
+              />
+            );
+          },
+        }}
       />
       <Tab.Screen
-        name='tarefas'
+        name="tarefas"
         component={Tarefas}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => {
+            if (focused) {
+              return (
+                <Ionicons
+                  name="clipboard"
+                  size={size}
+                  color={color}
+                />
+              );
+            }
+            return (
+              <Ionicons
+                name="clipboard-outline"
+                size={size}
+                color={color}
+              />
+            );
+          },
+        }}
       />
     </Tab.Navigator>
   );
