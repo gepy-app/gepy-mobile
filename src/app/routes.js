@@ -16,6 +16,7 @@ export default function Routes() {
         tabBarActiveTintColor: '#6700B3',
         tabBarInactiveTintColor: '#8300E4',
         tabBarStyle: {
+          height: 100,
           borderTopWidth: 0,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
@@ -37,6 +38,12 @@ export default function Routes() {
                   name="newspaper"
                   size={size}
                   color={color}
+                  style={{
+                    borderRadius: 50,
+                    borderWidth: 1,
+                    padding: 10,
+                    borderColor: '#6700b3',
+                  }}
                 />
               );
             }
