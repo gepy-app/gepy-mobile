@@ -6,7 +6,7 @@ export default function Recados() {
   return (
     <View style={styles.container}>
       <Text>Página de Recados</Text>
-      <StatusBar style="auto" />
+      <StatusBar style='auto' />
     </View>
   );
 }
@@ -14,7 +14,6 @@ export default function Recados() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#D7A1FF',

@@ -1,11 +1,10 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
-import Icon from 'react-native-vector-icons/Ionicons';
-import News from './pages/news';
-import Agenda from './pages/agenda';
-import Boletim from './pages/boletim';
-import Recados from './pages/recados';
-import Tarefas from './pages/tarefas';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import News from './pages/News';
+import Agenda from './pages/Agenda';
+import Boletim from './pages/Boletim';
+import Recados from './pages/Recados';
+import Tarefas from './pages/Tarefas';
 
 const Tab = createBottomTabNavigator();
 
@@ -27,7 +26,7 @@ export default function Routes() {
       }}
     >
       <Tab.Screen
-        name="news"
+        name='news'
         component={News}
         options={{
           headerShown: false,
@@ -35,96 +34,66 @@ export default function Routes() {
             if (focused) {
               return (
                 <Ionicons
-                  name="newspaper"
+                  name='newspaper'
                   size={size}
                   color={color}
-                  style={{
-                    borderRadius: 50,
-                    borderWidth: 1,
-                    padding: 10,
-                    borderColor: '#6700b3',
-                  }}
+                  // style={{
+                  //   borderRadius: 50,
+                  //   borderWidth: 1,
+                  //   padding: 10,
+                  //   borderColor: '#6700b3',
+                  // }}
                 />
               );
             }
             return (
-              <Ionicons
-                name="newspaper-outline"
-                size={size}
-                color={color}
-              />
+              <Ionicons name='newspaper-outline' size={size} color={color} />
             );
           },
         }}
       />
       <Tab.Screen
-        name="agenda"
+        name='agenda'
         component={Agenda}
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
-              return (
-                <Ionicons
-                  name="calendar"
-                  size={size}
-                  color={color}
-                />
-              );
+              return <Ionicons name='calendar' size={size} color={color} />;
             }
             return (
-              <Ionicons
-                name="calendar-outline"
-                size={size}
-                color={color}
-              />
+              <Ionicons name='calendar-outline' size={size} color={color} />
             );
           },
         }}
       />
       <Tab.Screen
-        name="boletim"
+        name='boletim'
         component={Boletim}
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
-              return (
-                <Ionicons
-                  name="reader"
-                  size={size}
-                  color={color}
-                />
-              );
+              return <Ionicons name='reader' size={size} color={color} />;
             }
-            return (
-              <Ionicons
-                name="reader-outline"
-                size={size}
-                color={color}
-              />
-            );
+            return <Ionicons name='reader-outline' size={size} color={color} />;
           },
         }}
       />
       <Tab.Screen
-        name="recados"
+        name='recados'
         component={Recados}
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
               return (
-                <Ionicons
-                  name="notifications"
-                  size={size}
-                  color={color}
-                />
+                <Ionicons name='notifications' size={size} color={color} />
               );
             }
             return (
               <Ionicons
-                name="notifications-outline"
+                name='notifications-outline'
                 size={size}
                 color={color}
               />
@@ -133,26 +102,16 @@ export default function Routes() {
         }}
       />
       <Tab.Screen
-        name="tarefas"
+        name='tarefas'
         component={Tarefas}
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
-              return (
-                <Ionicons
-                  name="clipboard"
-                  size={size}
-                  color={color}
-                />
-              );
+              return <Ionicons name='clipboard' size={size} color={color} />;
             }
             return (
-              <Ionicons
-                name="clipboard-outline"
-                size={size}
-                color={color}
-              />
+              <Ionicons name='clipboard-outline' size={size} color={color} />
             );
           },
         }}
