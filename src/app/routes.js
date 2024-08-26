@@ -1,8 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import News from './pages/News';
 import Agenda from './pages/Agenda';
 import Boletim from './pages/Boletim';
+import News from './pages/News';
 import Recados from './pages/Recados';
 import Tarefas from './pages/Tarefas';
 

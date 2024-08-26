@@ -18,10 +18,7 @@ export default function Page() {
   return (
     <Safe>
       <Container>
-        <StatusBar
-          backgroundColor="#D7A1FF"
-          hidden
-        />
+        <StatusBar backgroundColor='#D7A1FF' hidden />
         <LoginLogo source={Logo} />
         <FormContainer>
           <LoginText>Usuário</LoginText>
@@ -30,7 +27,7 @@ export default function Page() {
           <LoginInput></LoginInput>
         </FormContainer>
         <LoginButton>
-          <Link href={'./pages/home'}>
+          <Link href={'./pages/Home'}>
             <LoginButtonText>Entrar</LoginButtonText>
           </Link>
         </LoginButton>
