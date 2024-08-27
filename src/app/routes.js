@@ -1,10 +1,10 @@
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Agenda from './pages/Agenda';
-import Boletim from './pages/Boletim';
-import News from './pages/News';
-import Recados from './pages/Recados';
-import Tarefas from './pages/Tarefas';
+import Agenda from './pages/agenda';
+import Boletim from './pages/boletim';
+import News from './pages/news';
+import Recados from './pages/recados';
+import Tarefas from './pages/tarefas';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +28,7 @@ export default function Routes() {
       }}
     >
       <Tab.Screen
-        name='news'
+        name="news"
         component={News}
         options={{
           headerShown: false,
@@ -37,7 +37,7 @@ export default function Routes() {
             if (focused) {
               return (
                 <Ionicons
-                  name='newspaper'
+                  name="newspaper"
                   size={size}
                   color={color}
                   style={{
@@ -52,7 +52,7 @@ export default function Routes() {
 
             return (
               <Ionicons
-                name='newspaper-outline'
+                name="newspaper-outline"
                 size={size}
                 color={color}
                 style={{
@@ -67,7 +67,7 @@ export default function Routes() {
         }}
       />
       <Tab.Screen
-        name='agenda'
+        name="agenda"
         component={Agenda}
         options={{
           headerShown: false,
@@ -76,7 +76,7 @@ export default function Routes() {
             if (focused) {
               return (
                 <Ionicons
-                  name='calendar'
+                  name="calendar"
                   size={size}
                   color={color}
                   style={{
@@ -90,7 +90,7 @@ export default function Routes() {
             }
             return (
               <Ionicons
-                name='calendar-outline'
+                name="calendar-outline"
                 size={size}
                 color={color}
                 style={{
@@ -105,7 +105,7 @@ export default function Routes() {
         }}
       />
       <Tab.Screen
-        name='boletim'
+        name="boletim"
         component={Boletim}
         options={{
           headerShown: false,
@@ -114,7 +114,7 @@ export default function Routes() {
             if (focused) {
               return (
                 <Ionicons
-                  name='reader'
+                  name="reader"
                   size={size}
                   color={color}
                   style={{
@@ -128,7 +128,7 @@ export default function Routes() {
             }
             return (
               <Ionicons
-                name='reader-outline'
+                name="reader-outline"
                 size={size}
                 color={color}
                 style={{
@@ -143,7 +143,7 @@ export default function Routes() {
         }}
       />
       <Tab.Screen
-        name='recados'
+        name="recados"
         component={Recados}
         options={{
           headerShown: false,
@@ -152,7 +152,7 @@ export default function Routes() {
             if (focused) {
               return (
                 <Ionicons
-                  name='notifications'
+                  name="notifications"
                   size={size}
                   color={color}
                   style={{
@@ -166,7 +166,7 @@ export default function Routes() {
             }
             return (
               <Ionicons
-                name='notifications-outline'
+                name="notifications-outline"
                 size={size}
                 color={color}
                 style={{
@@ -181,7 +181,7 @@ export default function Routes() {
         }}
       />
       <Tab.Screen
-        name='tarefas'
+        name="tarefas"
         component={Tarefas}
         options={{
           headerShown: false,
@@ -190,7 +190,7 @@ export default function Routes() {
             if (focused) {
               return (
                 <Ionicons
-                  name='clipboard'
+                  name="clipboard"
                   size={size}
                   color={color}
                   style={{
@@ -204,7 +204,7 @@ export default function Routes() {
             }
             return (
               <Ionicons
-                name='clipboard-outline'
+                name="clipboard-outline"
                 size={size}
                 color={color}
                 style={{
