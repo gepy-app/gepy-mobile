@@ -15,12 +15,14 @@ export default function Routes() {
         tabBarActiveTintColor: '#6700B3',
         tabBarInactiveTintColor: '#8300E4',
         tabBarStyle: {
-          height: 100,
+          height: 80,
           borderTopWidth: 0,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
-          paddingBottom: 5,
-          paddingTop: 5,
+          paddingBottom: 10,
+          paddingTop: 10,
+          paddingLeft: 10,
+          paddingRight: 10,
           marginTop: -20,
         },
       }}
@@ -30,6 +32,7 @@ export default function Routes() {
         component={News}
         options={{
           headerShown: false,
+          tabBarLabelStyle: { fontWeight: 'bold' },
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
               return (
@@ -37,17 +40,28 @@ export default function Routes() {
                   name='newspaper'
                   size={size}
                   color={color}
-                  // style={{
-                  //   borderRadius: 50,
-                  //   borderWidth: 1,
-                  //   padding: 10,
-                  //   borderColor: '#6700b3',
-                  // }}
+                  style={{
+                    borderRadius: 50,
+                    borderWidth: 2,
+                    padding: 10,
+                    borderColor: '#6700b3',
+                  }}
                 />
               );
             }
+
             return (
-              <Ionicons name='newspaper-outline' size={size} color={color} />
+              <Ionicons
+                name='newspaper-outline'
+                size={size}
+                color={color}
+                style={{
+                  borderRadius: 50,
+                  borderWidth: 1,
+                  padding: 10,
+                  borderColor: '#8300E4',
+                }}
+              />
             );
           },
         }}
@@ -57,12 +71,35 @@ export default function Routes() {
         component={Agenda}
         options={{
           headerShown: false,
+          tabBarLabelStyle: { fontWeight: 'bold' },
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
-              return <Ionicons name='calendar' size={size} color={color} />;
+              return (
+                <Ionicons
+                  name='calendar'
+                  size={size}
+                  color={color}
+                  style={{
+                    borderRadius: 50,
+                    borderWidth: 2,
+                    padding: 10,
+                    borderColor: '#6700b3',
+                  }}
+                />
+              );
             }
             return (
-              <Ionicons name='calendar-outline' size={size} color={color} />
+              <Ionicons
+                name='calendar-outline'
+                size={size}
+                color={color}
+                style={{
+                  borderRadius: 50,
+                  borderWidth: 1,
+                  padding: 10,
+                  borderColor: '#8300E4',
+                }}
+              />
             );
           },
         }}
@@ -72,11 +109,36 @@ export default function Routes() {
         component={Boletim}
         options={{
           headerShown: false,
+          tabBarLabelStyle: { fontWeight: 'bold' },
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
-              return <Ionicons name='reader' size={size} color={color} />;
+              return (
+                <Ionicons
+                  name='reader'
+                  size={size}
+                  color={color}
+                  style={{
+                    borderRadius: 50,
+                    borderWidth: 2,
+                    padding: 10,
+                    borderColor: '#6700b3',
+                  }}
+                />
+              );
             }
-            return <Ionicons name='reader-outline' size={size} color={color} />;
+            return (
+              <Ionicons
+                name='reader-outline'
+                size={size}
+                color={color}
+                style={{
+                  borderRadius: 50,
+                  borderWidth: 1,
+                  padding: 10,
+                  borderColor: '#8300E4',
+                }}
+              />
+            );
           },
         }}
       />
@@ -85,10 +147,21 @@ export default function Routes() {
         component={Recados}
         options={{
           headerShown: false,
+          tabBarLabelStyle: { fontWeight: 'bold' },
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
               return (
-                <Ionicons name='notifications' size={size} color={color} />
+                <Ionicons
+                  name='notifications'
+                  size={size}
+                  color={color}
+                  style={{
+                    borderRadius: 50,
+                    borderWidth: 2,
+                    padding: 10,
+                    borderColor: '#6700b3',
+                  }}
+                />
               );
             }
             return (
@@ -96,6 +169,12 @@ export default function Routes() {
                 name='notifications-outline'
                 size={size}
                 color={color}
+                style={{
+                  borderRadius: 50,
+                  borderWidth: 1,
+                  padding: 10,
+                  borderColor: '#8300E4',
+                }}
               />
             );
           },
@@ -106,12 +185,35 @@ export default function Routes() {
         component={Tarefas}
         options={{
           headerShown: false,
+          tabBarLabelStyle: { fontWeight: 'bold' },
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
-              return <Ionicons name='clipboard' size={size} color={color} />;
+              return (
+                <Ionicons
+                  name='clipboard'
+                  size={size}
+                  color={color}
+                  style={{
+                    borderRadius: 50,
+                    borderWidth: 2,
+                    padding: 10,
+                    borderColor: '#6700b3',
+                  }}
+                />
+              );
             }
             return (
-              <Ionicons name='clipboard-outline' size={size} color={color} />
+              <Ionicons
+                name='clipboard-outline'
+                size={size}
+                color={color}
+                style={{
+                  borderRadius: 50,
+                  borderWidth: 1,
+                  padding: 10,
+                  borderColor: '#8300E4',
+                }}
+              />
             );
           },
         }}
