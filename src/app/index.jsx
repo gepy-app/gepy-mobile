@@ -13,6 +13,7 @@ import {
   LoginButtonText,
   LoginButtonView,
 } from './styles';
+import DropShadow from 'react-native-drop-shadow';
 
 export default function Page() {
   return (
@@ -21,6 +22,7 @@ export default function Page() {
         <StatusBar
           backgroundColor="#D7A1FF"
           hidden
+          barStyle={'dark-content'}
         />
         <LoginLogo source={Logo} />
         <FormContainer>

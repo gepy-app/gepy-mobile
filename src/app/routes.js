@@ -21,8 +21,8 @@ export default function Routes() {
           borderTopRightRadius: 20,
           paddingBottom: 10,
           paddingTop: 10,
-          paddingLeft: 10,
-          paddingRight: 10,
+          paddingLeft: 11,
+          paddingRight: 9,
           marginTop: -20,
         },
       }}
@@ -38,13 +38,19 @@ export default function Routes() {
               return (
                 <Ionicons
                   name="newspaper"
-                  size={size}
+                  size={23}
                   color={color}
                   style={{
-                    borderRadius: 50,
+                    borderRadius: 25,
                     borderWidth: 2,
                     padding: 10,
                     borderColor: '#6700b3',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+
+                    // paddingLeft: 13,
+                    // paddingRight: 7,
                   }}
                 />
               );
@@ -77,7 +83,7 @@ export default function Routes() {
               return (
                 <Ionicons
                   name="calendar"
-                  size={size}
+                  size={23}
                   color={color}
                   style={{
                     borderRadius: 50,
@@ -115,7 +121,7 @@ export default function Routes() {
               return (
                 <Ionicons
                   name="reader"
-                  size={size}
+                  size={23}
                   color={color}
                   style={{
                     borderRadius: 50,
@@ -153,7 +159,7 @@ export default function Routes() {
               return (
                 <Ionicons
                   name="notifications"
-                  size={size}
+                  size={23}
                   color={color}
                   style={{
                     borderRadius: 50,
@@ -191,7 +197,7 @@ export default function Routes() {
               return (
                 <Ionicons
                   name="clipboard"
-                  size={size}
+                  size={23}
                   color={color}
                   style={{
                     borderRadius: 50,
