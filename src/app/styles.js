@@ -5,6 +5,7 @@ export const Safe = styled.SafeAreaView`
   flex: 1;
   background-color: #d7a1ff;
 `;
+export const IconViewFocused = styled.View``;
 
 export const Container = styled.View`
   flex: 1;

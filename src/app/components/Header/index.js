@@ -1,8 +1,7 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { LoggedUser, LoggedUserName, Logo, SafeHeader } from './styles';
-import LogoPng from '../../assets/Logo.png';
 import { Ionicons } from '@expo/vector-icons';
+import React from 'react';
+import LogoPng from '../../assets/Logo.png';
+import { LoggedUser, LoggedUserName, Logo, SafeHeader } from './styles';
 
 export default function Header() {
   return (
