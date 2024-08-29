@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import UserHeader from '../../components/userHeader';
 
 export default function Boletim() {
   return (
     <View style={styles.container}>
       <Text>Página do Boletim</Text>
-      <StatusBar style='auto' />
+      <UserHeader />
+      <StatusBar style="auto" />
     </View>
   );
 }

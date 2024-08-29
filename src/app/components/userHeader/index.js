@@ -3,7 +3,7 @@ import React from 'react';
 import LogoPng from '../../assets/Logo.png';
 import { LoggedUser, LoggedUserName, Logo, SafeHeader } from './styles';
 
-export default function Header() {
+export default function UserHeader() {
   return (
     <SafeHeader>
       <Logo source={LogoPng} />
