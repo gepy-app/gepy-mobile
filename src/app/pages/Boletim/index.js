@@ -1,14 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import UserHeader from '../../components/userHeader';
+import Notas from '../../assets/notas.png';
 
 export default function Boletim() {
   return (
     <View style={styles.container}>
-      <Text>Página do Boletim</Text>
       <UserHeader />
-      <StatusBar style="auto" />
+      <ScrollView>
+        <Text style={{ padding: 20, alignSelf: 'center', color: 'white' }}>
+          Boletim do aluno
+        </Text>
+        <Image source={Notas} />
+      </ScrollView>
+      <StatusBar style='auto' />
     </View>
   );
 }

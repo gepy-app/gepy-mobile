@@ -1,14 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, View } from 'react-native';
+import PurpleNewsletter from '../../assets/Purple-Newsletter.png';
 import UserHeader from '../../components/userHeader';
 
 export default function News() {
   return (
     <View style={styles.container}>
       <UserHeader />
-      <Text>Página de Noticias</Text>
-      <StatusBar style="auto" />
+      <ScrollView>
+        <Image source={PurpleNewsletter} style={styles.image} />
+      </ScrollView>
+      <StatusBar style='auto' />
     </View>
   );
 }
@@ -19,6 +22,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#D7A1FF',
-    paddingBottom: 20,
+    // marginTop:100,
   },
 });

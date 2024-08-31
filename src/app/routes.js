@@ -61,40 +61,40 @@ export default function Routes() {
           alignItems: 'center',
         },
       })}
-      initialRouteName="news"
+      initialRouteName='news'
     >
       <Tab.Screen
-        name="news"
+        name='news'
         component={News}
         options={{
           headerShown: false,
           tabBarLabelStyle: { fontWeight: 'bold' },
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="agenda"
         component={Agenda}
         options={{
           headerShown: false,
           tabBarLabelStyle: { fontWeight: 'bold' },
         }}
-      />
+      /> */}
       <Tab.Screen
-        name="boletim"
+        name='boletim'
         component={Boletim}
         options={{
           headerShown: false,
           tabBarLabelStyle: { fontWeight: 'bold' },
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="tarefas"
         component={Tarefas}
         options={{
           headerShown: false,
           tabBarLabelStyle: { fontWeight: 'bold' },
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 }
